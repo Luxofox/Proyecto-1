@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{43FBCE90-5E11-40B5-8E82-4F65F97E974E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Parcial1.My.MyApplication</StartupObject>
-    <RootNamespace>Parcial1</RootNamespace>
-    <AssemblyName>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1</AssemblyName>
+    <StartupObject>FormsProyecto1.My.MyApplication</StartupObject>
+    <RootNamespace>FormsProyecto1</RootNamespace>
+    <AssemblyName>FormsProyecto1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -35,7 +35,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml</DocumentationFile>
+    <DocumentationFile>FormsProyecto1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -45,7 +45,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml</DocumentationFile>
+    <DocumentationFile>FormsProyecto1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
