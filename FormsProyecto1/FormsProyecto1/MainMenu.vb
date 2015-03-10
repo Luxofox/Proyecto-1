@@ -23,11 +23,11 @@ Public Class MainMenu
         dataTableUser.Columns.Add("User ID")
         dataTableUser.Columns.Add("Name")
         dataTableUser.Columns.Add("Last Name")
+        dataTableUser.Columns.Add("Status")
         dataTableUser.Columns.Add("Username")
         dataTableUser.Columns.Add("Password")
-        dataTableUser.Columns.Add("Active")
-        dataTableUser.Columns.Add("Entry Date")
         dataTableUser.Columns.Add("Role ID")
+        dataTableUser.Columns.Add("Entry Date")
 
         createDataTableUser = dataTableUser
 
@@ -121,6 +121,35 @@ Public Class MainMenu
         MsgBox("The data of the user has been succesfully added")
 
     End Sub
+    Public Function listOfUser() As List(Of User)
+        'From CoursesTable, obtains all the rows
+        Dim cmdSelectUser As New SqlCommand("select * from User", connection)
+        connection.Open()
+
+        Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
+        Dim userList As New List(Of User)
+
+        Dim users As New User
+
+        Do While reader.HasRows
+            Do While reader.Read()
+                users = New User
+                users.user_Id = reader.GetInt32(1)
+                users.name_Of_User = reader.GetString(2)
+                users.user_Lastname = reader.GetString(3)
+                users.user_Status = reader.GetBoolean(4)
+                users.user_Name = reader.GetString(5)
+                users.user_Password = reader.GetString(6)
+                users.User_IdRole = reader.GetInt32(7)
+                userList.Add(users)
+            Loop
+            reader.NextResult()
+        Loop
+
+        listOfUser = userList
+        connection.Close()
+    End Function
+
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
