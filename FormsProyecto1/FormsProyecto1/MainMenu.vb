@@ -98,7 +98,29 @@ Public Class MainMenu
         askRoleInputs = role
 
     End Function
+    Public Sub insert(ByVal user As User)
 
+        Dim cmdInsert As New SqlCommand
+        cmdInsert = New SqlCommand("insert into User(,userName,userLastname,userStatus,userPassword,UserIdRole)" & _
+                                   "values(@userID,@userName,@userLastname,@userStatus,@userPassword,@UserIdRole)", connection)
+
+        With cmdInsert
+
+            .Parameters.AddWithValue("@userID", user.user_Id)
+            .Parameters.AddWithValue("@userName", user.user_Name)
+            .Parameters.AddWithValue("@userLastname", user.user_Lastname)
+            .Parameters.AddWithValue("@userStatus", user.user_Status)
+            .Parameters.AddWithValue("@userPassword", user.user_Password)
+            .Parameters.AddWithValue("@UserIdRole", user.User_IdRole)
+
+        End With
+
+        connection.Open()
+        cmdInsert.ExecuteNonQuery()
+        connection.Close()
+        MsgBox("The data of the user has been succesfully added")
+
+    End Sub
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
