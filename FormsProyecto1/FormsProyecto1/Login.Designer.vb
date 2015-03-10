@@ -26,8 +26,8 @@ Partial Class Login
         Me.lblClessidraLogin = New System.Windows.Forms.Label()
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.lblPassword = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnLogin
@@ -69,19 +69,19 @@ Partial Class Login
         Me.lblPassword.TabIndex = 3
         Me.lblPassword.Text = "Password:"
         '
-        'TextBox1
+        'txtUsername
         '
-        Me.TextBox1.Location = New System.Drawing.Point(121, 107)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.txtUsername.Location = New System.Drawing.Point(121, 107)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(197, 20)
+        Me.txtUsername.TabIndex = 4
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(121, 156)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox2.TabIndex = 5
+        Me.txtPassword.Location = New System.Drawing.Point(121, 156)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(197, 20)
+        Me.txtPassword.TabIndex = 5
         '
         'Login
         '
@@ -89,8 +89,8 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(370, 262)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.lblClessidraLogin)
@@ -107,6 +107,6 @@ Partial Class Login
     Friend WithEvents lblClessidraLogin As System.Windows.Forms.Label
     Friend WithEvents lblUsername As System.Windows.Forms.Label
     Friend WithEvents lblPassword As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtUsername As System.Windows.Forms.TextBox
+    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
 End Class
