@@ -121,34 +121,7 @@ Public Class MainMenu
         MsgBox("The data of the user has been succesfully added")
 
     End Sub
-    Public Function listOfUser() As List(Of User)
-        'From Users Table, obtains all the rows
-        Dim cmdSelectUser As New SqlCommand("select * from User", connection)
-        connection.Open()
-
-        Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
-        Dim userList As New List(Of User)
-
-        Dim users As New User
-
-        Do While reader.HasRows
-            Do While reader.Read()
-                users = New User
-                users.user_Id = reader.GetInt32(1)
-                users.name_Of_User = reader.GetString(2)
-                users.user_Lastname = reader.GetString(3)
-                users.user_Status = reader.GetBoolean(4)
-                users.user_Name = reader.GetString(5)
-                users.user_Password = reader.GetString(6)
-                users.User_IdRole = reader.GetInt32(7)
-                userList.Add(users)
-            Loop
-            reader.NextResult()
-        Loop
-
-        listOfUser = userList
-        connection.Close()
-    End Function
+    
     Public Sub insertRoles(ByVal role As Role)
 
         Dim cmdInsert As New SqlCommand
@@ -169,34 +142,14 @@ Public Class MainMenu
         MsgBox("The data of the roles has been succesfully added")
 
     End Sub
-    Public Function listOfRoles() As List(Of Role)
-        'From Roles Table, obtains all the rows
-        Dim cmdSelectUser As New SqlCommand("select * from Role", connection)
-        connection.Open()
-
-        Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
-        Dim rolesList As New List(Of Role)
-
-        Dim roles As New Role
-
-        Do While reader.HasRows
-            Do While reader.Read()
-                roles = New Role
-                roles.role_Id = reader.GetInt32(1)
-                roles.role_Name = reader.GetString(2)
-                roles.role_Description = reader.GetString(3)
-                rolesList.Add(roles)
-            Loop
-            reader.NextResult()
-        Loop
-
-        listOfRoles = rolesList
-        connection.Close()
-    End Function
+    
    
 
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        createDataTableUser()
+        insertUsers(askUserInputs())
+
 
     End Sub
 End Class

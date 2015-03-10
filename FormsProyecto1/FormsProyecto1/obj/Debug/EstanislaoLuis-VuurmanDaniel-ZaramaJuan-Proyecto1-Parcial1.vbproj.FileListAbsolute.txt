@@ -23,3 +23,6 @@ F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-
 F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe
 F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml
 F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.pdb
+C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\Parcial1.Category_Management.resources
+C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\Parcial1.Proyect_Administration.resources
+C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\Parcial1.Users_in_Proyects.resources
