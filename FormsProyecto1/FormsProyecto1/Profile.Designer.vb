@@ -29,12 +29,13 @@ Partial Class UserProfile
         Me.mtsUserMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProyectsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListOfProyectsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RequestedHolidaysToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InboxToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlertsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MassagesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RequestedHolidaysToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblEnterpriseCharge = New System.Windows.Forms.Label()
         Me.btnSendMessage = New System.Windows.Forms.Button()
+        Me.ReturnToMainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -78,7 +79,7 @@ Partial Class UserProfile
         '
         'mtsUserMenu
         '
-        Me.mtsUserMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProyectsToolStripMenuItem, Me.InboxToolStripMenuItem, Me.RequestedHolidaysToolStripMenuItem})
+        Me.mtsUserMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProyectsToolStripMenuItem, Me.InboxToolStripMenuItem, Me.RequestedHolidaysToolStripMenuItem, Me.ReturnToMainMenuToolStripMenuItem})
         Me.mtsUserMenu.Name = "mtsUserMenu"
         Me.mtsUserMenu.Size = New System.Drawing.Size(50, 20)
         Me.mtsUserMenu.Text = "Menu"
@@ -87,7 +88,7 @@ Partial Class UserProfile
         '
         Me.ProyectsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListOfProyectsToolStripMenuItem})
         Me.ProyectsToolStripMenuItem.Name = "ProyectsToolStripMenuItem"
-        Me.ProyectsToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ProyectsToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.ProyectsToolStripMenuItem.Text = "Proyects"
         '
         'ListOfProyectsToolStripMenuItem
@@ -96,30 +97,30 @@ Partial Class UserProfile
         Me.ListOfProyectsToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.ListOfProyectsToolStripMenuItem.Text = "List of proyects"
         '
-        'RequestedHolidaysToolStripMenuItem
-        '
-        Me.RequestedHolidaysToolStripMenuItem.Name = "RequestedHolidaysToolStripMenuItem"
-        Me.RequestedHolidaysToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.RequestedHolidaysToolStripMenuItem.Text = "Requested Holidays"
-        '
         'InboxToolStripMenuItem
         '
         Me.InboxToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AlertsToolStripMenuItem, Me.MassagesToolStripMenuItem})
         Me.InboxToolStripMenuItem.Name = "InboxToolStripMenuItem"
-        Me.InboxToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.InboxToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.InboxToolStripMenuItem.Text = "Inbox"
         '
         'AlertsToolStripMenuItem
         '
         Me.AlertsToolStripMenuItem.Name = "AlertsToolStripMenuItem"
-        Me.AlertsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AlertsToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.AlertsToolStripMenuItem.Text = "Alerts"
         '
         'MassagesToolStripMenuItem
         '
         Me.MassagesToolStripMenuItem.Name = "MassagesToolStripMenuItem"
-        Me.MassagesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MassagesToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.MassagesToolStripMenuItem.Text = "Messages"
+        '
+        'RequestedHolidaysToolStripMenuItem
+        '
+        Me.RequestedHolidaysToolStripMenuItem.Name = "RequestedHolidaysToolStripMenuItem"
+        Me.RequestedHolidaysToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.RequestedHolidaysToolStripMenuItem.Text = "Requested Holidays"
         '
         'lblEnterpriseCharge
         '
@@ -139,6 +140,12 @@ Partial Class UserProfile
         Me.btnSendMessage.TabIndex = 6
         Me.btnSendMessage.Text = "Send a message"
         Me.btnSendMessage.UseVisualStyleBackColor = True
+        '
+        'ReturnToMainMenuToolStripMenuItem
+        '
+        Me.ReturnToMainMenuToolStripMenuItem.Name = "ReturnToMainMenuToolStripMenuItem"
+        Me.ReturnToMainMenuToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.ReturnToMainMenuToolStripMenuItem.Text = "Return to Main Menu"
         '
         'UserProfile
         '
@@ -176,4 +183,5 @@ Partial Class UserProfile
     Friend WithEvents MassagesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblEnterpriseCharge As System.Windows.Forms.Label
     Friend WithEvents btnSendMessage As System.Windows.Forms.Button
+    Friend WithEvents ReturnToMainMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

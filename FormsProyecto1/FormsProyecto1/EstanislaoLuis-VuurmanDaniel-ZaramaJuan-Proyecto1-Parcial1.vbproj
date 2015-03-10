@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{43FBCE90-5E11-40B5-8E82-4F65F97E974E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>FormsProyecto1.My.MyApplication</StartupObject>
-    <RootNamespace>FormsProyecto1</RootNamespace>
-    <AssemblyName>FormsProyecto1</AssemblyName>
+    <StartupObject>Parcial1.My.MyApplication</StartupObject>
+    <RootNamespace>Parcial1</RootNamespace>
+    <AssemblyName>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -35,7 +35,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>FormsProyecto1.xml</DocumentationFile>
+    <DocumentationFile>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -45,7 +45,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>FormsProyecto1.xml</DocumentationFile>
+    <DocumentationFile>EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -85,6 +85,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create User.Designer.vb">
+      <DependentUpon>Create User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete User.Designer.vb">
+      <DependentUpon>Delete User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete User.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HolidayBank.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,10 +110,34 @@
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modify User.Designer.vb">
+      <DependentUpon>Modify User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modify User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RequestHoliday.Designer.vb">
       <DependentUpon>RequestHoliday.vb</DependentUpon>
     </Compile>
     <Compile Include="RequestHoliday.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time Registration.Designer.vb">
+      <DependentUpon>Time Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Time Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAdministration.Designer.vb">
+      <DependentUpon>UserAdministration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdministration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Welcome.Designer.vb">
@@ -140,14 +176,32 @@
     <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Create User.resx">
+      <DependentUpon>Create User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete User.resx">
+      <DependentUpon>Delete User.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HolidayBank.resx">
       <DependentUpon>HolidayBank.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modify User.resx">
+      <DependentUpon>Modify User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RequestHoliday.resx">
       <DependentUpon>RequestHoliday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time Registration.resx">
+      <DependentUpon>Time Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdministration.resx">
+      <DependentUpon>UserAdministration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>

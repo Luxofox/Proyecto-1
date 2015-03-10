@@ -1,4 +1,4 @@
-﻿Public Class MainMenu
+﻿Public Class UserAdministration
     Protected Overrides Sub OnPaint(ByVal e As PaintEventArgs)
         MyBase.OnPaint(e)
         Dim AnchoBorde As Integer = 5
@@ -9,8 +9,8 @@
         ColorBorde, AnchoBorde, ButtonBorderStyle.Solid)
     End Sub
 
-    
-    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub UserAdministration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

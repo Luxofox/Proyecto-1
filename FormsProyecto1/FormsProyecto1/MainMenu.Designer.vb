@@ -23,78 +23,117 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnTimeRegistration = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.btnReports = New System.Windows.Forms.Button()
+        Me.btnUserAdministration = New System.Windows.Forms.Button()
+        Me.btnHolidayRequest = New System.Windows.Forms.Button()
+        Me.btnHolidayBank = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblMainMenu = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnTimeRegistration
         '
-        Me.btnTimeRegistration.Location = New System.Drawing.Point(99, 105)
+        Me.btnTimeRegistration.Location = New System.Drawing.Point(158, 90)
         Me.btnTimeRegistration.Name = "btnTimeRegistration"
-        Me.btnTimeRegistration.Size = New System.Drawing.Size(134, 23)
+        Me.btnTimeRegistration.Size = New System.Drawing.Size(134, 38)
         Me.btnTimeRegistration.TabIndex = 0
         Me.btnTimeRegistration.Text = "Time Registration"
         Me.btnTimeRegistration.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnProfile
         '
-        Me.Button2.Location = New System.Drawing.Point(99, 134)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(134, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnProfile.Location = New System.Drawing.Point(158, 134)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(134, 38)
+        Me.btnProfile.TabIndex = 1
+        Me.btnProfile.Text = "Profile"
+        Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnReports
         '
-        Me.Button3.Location = New System.Drawing.Point(99, 165)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(134, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnReports.Location = New System.Drawing.Point(158, 310)
+        Me.btnReports.Name = "btnReports"
+        Me.btnReports.Size = New System.Drawing.Size(134, 38)
+        Me.btnReports.TabIndex = 2
+        Me.btnReports.Text = "Reports"
+        Me.btnReports.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnUserAdministration
         '
-        Me.Button4.Location = New System.Drawing.Point(99, 194)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(134, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnUserAdministration.Location = New System.Drawing.Point(158, 266)
+        Me.btnUserAdministration.Name = "btnUserAdministration"
+        Me.btnUserAdministration.Size = New System.Drawing.Size(134, 38)
+        Me.btnUserAdministration.TabIndex = 3
+        Me.btnUserAdministration.Text = "User Administration"
+        Me.btnUserAdministration.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnHolidayRequest
         '
-        Me.Button5.Location = New System.Drawing.Point(99, 223)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(134, 23)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnHolidayRequest.Location = New System.Drawing.Point(158, 178)
+        Me.btnHolidayRequest.Name = "btnHolidayRequest"
+        Me.btnHolidayRequest.Size = New System.Drawing.Size(134, 38)
+        Me.btnHolidayRequest.TabIndex = 4
+        Me.btnHolidayRequest.Text = "Request Holiday"
+        Me.btnHolidayRequest.UseVisualStyleBackColor = True
+        '
+        'btnHolidayBank
+        '
+        Me.btnHolidayBank.Location = New System.Drawing.Point(158, 222)
+        Me.btnHolidayBank.Name = "btnHolidayBank"
+        Me.btnHolidayBank.Size = New System.Drawing.Size(134, 38)
+        Me.btnHolidayBank.TabIndex = 5
+        Me.btnHolidayBank.Text = "Holiday Bank"
+        Me.btnHolidayBank.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(183, 368)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(80, 35)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'lblMainMenu
+        '
+        Me.lblMainMenu.AutoSize = True
+        Me.lblMainMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMainMenu.ForeColor = System.Drawing.Color.Red
+        Me.lblMainMenu.Location = New System.Drawing.Point(170, 40)
+        Me.lblMainMenu.Name = "lblMainMenu"
+        Me.lblMainMenu.Size = New System.Drawing.Size(109, 20)
+        Me.lblMainMenu.TabIndex = 7
+        Me.lblMainMenu.Text = "MAIN MENU"
         '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(804, 446)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(474, 446)
+        Me.Controls.Add(Me.lblMainMenu)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnHolidayBank)
+        Me.Controls.Add(Me.btnHolidayRequest)
+        Me.Controls.Add(Me.btnUserAdministration)
+        Me.Controls.Add(Me.btnReports)
+        Me.Controls.Add(Me.btnProfile)
         Me.Controls.Add(Me.btnTimeRegistration)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MainMenu"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnTimeRegistration As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnProfile As System.Windows.Forms.Button
+    Friend WithEvents btnReports As System.Windows.Forms.Button
+    Friend WithEvents btnUserAdministration As System.Windows.Forms.Button
+    Friend WithEvents btnHolidayRequest As System.Windows.Forms.Button
+    Friend WithEvents btnHolidayBank As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents lblMainMenu As System.Windows.Forms.Label
 End Class

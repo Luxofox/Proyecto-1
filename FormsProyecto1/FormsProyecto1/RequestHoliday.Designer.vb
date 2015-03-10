@@ -32,6 +32,10 @@ Partial Class RequestHolidays
         Me.lblFinishDayHolidays = New System.Windows.Forms.Label()
         Me.lblHolidayAvailable = New System.Windows.Forms.Label()
         Me.txtAvailableDays = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReturnToMainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblHolidayRequestUser
@@ -116,6 +120,28 @@ Partial Class RequestHolidays
         Me.txtAvailableDays.Size = New System.Drawing.Size(196, 20)
         Me.txtAvailableDays.TabIndex = 9
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(570, 24)
+        Me.MenuStrip1.TabIndex = 10
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'MenuToolStripMenuItem
+        '
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReturnToMainMenuToolStripMenuItem})
+        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.MenuToolStripMenuItem.Text = "Menu"
+        '
+        'ReturnToMainMenuToolStripMenuItem
+        '
+        Me.ReturnToMainMenuToolStripMenuItem.Name = "ReturnToMainMenuToolStripMenuItem"
+        Me.ReturnToMainMenuToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.ReturnToMainMenuToolStripMenuItem.Text = "Return to Main Menu"
+        '
         'RequestHolidays
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -132,10 +158,14 @@ Partial Class RequestHolidays
         Me.Controls.Add(Me.btnRequestHolidays)
         Me.Controls.Add(Me.btnHolidayBack)
         Me.Controls.Add(Me.lblHolidayRequestUser)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "RequestHolidays"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -150,4 +180,7 @@ Partial Class RequestHolidays
     Friend WithEvents lblFinishDayHolidays As System.Windows.Forms.Label
     Friend WithEvents lblHolidayAvailable As System.Windows.Forms.Label
     Friend WithEvents txtAvailableDays As System.Windows.Forms.TextBox
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReturnToMainMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
