@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe.config
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.pdb
@@ -20,12 +19,3 @@ C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debu
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.pdb
-=======
-C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\FormsProyecto1.exe.config
-C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.exe
-C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.xml
-C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.pdb
-F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\FormsProyecto1.exe.config
-F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.exe
-F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.xml
-F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.pdb
