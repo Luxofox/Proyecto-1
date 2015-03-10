@@ -85,6 +85,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category Management.Designer.vb">
+      <DependentUpon>Category Management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category Management.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Create User.Designer.vb">
       <DependentUpon>Create User.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,12 @@
     <Compile Include="UserAdministration.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Users in Proyects.Designer.vb">
+      <DependentUpon>Users in Proyects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users in Proyects.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Welcome.Designer.vb">
       <DependentUpon>Welcome.vb</DependentUpon>
     </Compile>
@@ -183,6 +195,9 @@
     <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Category Management.resx">
+      <DependentUpon>Category Management.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Create User.resx">
       <DependentUpon>Create User.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserAdministration.resx">
       <DependentUpon>UserAdministration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users in Proyects.resx">
+      <DependentUpon>Users in Proyects.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
