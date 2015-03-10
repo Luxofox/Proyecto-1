@@ -27,7 +27,7 @@ Public Class MainMenu
         dataTableUser.Columns.Add("Username")
         dataTableUser.Columns.Add("Password")
         dataTableUser.Columns.Add("Role ID")
-        dataTableUser.Columns.Add("Entry Date")
+        'dataTableUser.Columns.Add("Entry Date")
 
         createDataTableUser = dataTableUser
 
@@ -69,13 +69,13 @@ Public Class MainMenu
 
     Public Function createDataTableRole() As DataTable
 
-        dataTableUser = New DataTable
-        dataTableUser.Columns.Add("Role ID")
-        dataTableUser.Columns.Add("Role Name")
-        dataTableUser.Columns.Add("Role Description")
+        dataTableRole = New DataTable
+        dataTableRole.Columns.Add("Role ID")
+        dataTableRole.Columns.Add("Role Name")
+        dataTableRole.Columns.Add("Role Description")
        
 
-        createDataTableRole = dataTableUser
+        createDataTableRole = dataTableRole
 
     End Function
     Public Function askRoleInputs() As Role
@@ -94,11 +94,11 @@ Public Class MainMenu
         role.role_Id = roleId
         role.role_Name = roleName
         role.role_Description = roleDescription
-        'return course
+        'return role
         askRoleInputs = role
 
     End Function
-    Public Sub insert(ByVal user As User)
+    Public Sub insertUsers(ByVal user As User)
 
         Dim cmdInsert As New SqlCommand
         cmdInsert = New SqlCommand("insert into User(,userName,userLastname,userStatus,userPassword,UserIdRole)" & _
@@ -122,7 +122,7 @@ Public Class MainMenu
 
     End Sub
     Public Function listOfUser() As List(Of User)
-        'From CoursesTable, obtains all the rows
+        'From Users Table, obtains all the rows
         Dim cmdSelectUser As New SqlCommand("select * from User", connection)
         connection.Open()
 
@@ -149,6 +149,52 @@ Public Class MainMenu
         listOfUser = userList
         connection.Close()
     End Function
+    Public Sub insertRoles(ByVal role As Role)
+
+        Dim cmdInsert As New SqlCommand
+        cmdInsert = New SqlCommand("insert into Role(,roleName,roleDescription,roleId)" & _
+                                   "values(@roleId,@roleDescription,@roleId)", connection)
+
+        With cmdInsert
+
+            .Parameters.AddWithValue("@roleId", role.role_Id)
+            .Parameters.AddWithValue("@roleName", role.role_Name)
+            .Parameters.AddWithValue("@roleDescription", role.role_Description)
+           
+        End With
+
+        connection.Open()
+        cmdInsert.ExecuteNonQuery()
+        connection.Close()
+        MsgBox("The data of the roles has been succesfully added")
+
+    End Sub
+    Public Function listOfRoles() As List(Of Role)
+        'From Roles Table, obtains all the rows
+        Dim cmdSelectUser As New SqlCommand("select * from Role", connection)
+        connection.Open()
+
+        Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
+        Dim rolesList As New List(Of Role)
+
+        Dim roles As New Role
+
+        Do While reader.HasRows
+            Do While reader.Read()
+                roles = New Role
+                roles.role_Id = reader.GetInt32(1)
+                roles.role_Name = reader.GetString(2)
+                roles.role_Description = reader.GetString(3)
+                rolesList.Add(roles)
+            Loop
+            reader.NextResult()
+        Loop
+
+        listOfRoles = rolesList
+        connection.Close()
+    End Function
+   
+
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
