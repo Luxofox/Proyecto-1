@@ -97,6 +97,7 @@ Partial Class Login
         Me.Controls.Add(Me.btnLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

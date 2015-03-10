@@ -22,8 +22,79 @@ Partial Class MainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.btnTimeRegistration = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnTimeRegistration
+        '
+        Me.btnTimeRegistration.Location = New System.Drawing.Point(99, 105)
+        Me.btnTimeRegistration.Name = "btnTimeRegistration"
+        Me.btnTimeRegistration.Size = New System.Drawing.Size(134, 23)
+        Me.btnTimeRegistration.TabIndex = 0
+        Me.btnTimeRegistration.Text = "Time Registration"
+        Me.btnTimeRegistration.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(99, 134)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(134, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(99, 165)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(134, 23)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(99, 194)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(134, 23)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(99, 223)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(134, 23)
+        Me.Button5.TabIndex = 4
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'MainMenu
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(804, 446)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnTimeRegistration)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "MainMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MainMenu"
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents btnTimeRegistration As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class
