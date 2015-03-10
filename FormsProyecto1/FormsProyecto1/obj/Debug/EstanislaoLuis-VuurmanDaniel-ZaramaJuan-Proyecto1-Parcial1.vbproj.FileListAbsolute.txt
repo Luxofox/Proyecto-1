@@ -2,3 +2,7 @@ C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debu
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.exe
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.xml
 C:\Users\Luxo\Documents\GitHub\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.pdb
+F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\bin\Debug\FormsProyecto1.exe.config
+F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.exe
+F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.xml
+F:\DesktopApp\Proyecto-1\FormsProyecto1\FormsProyecto1\obj\Debug\FormsProyecto1.pdb
