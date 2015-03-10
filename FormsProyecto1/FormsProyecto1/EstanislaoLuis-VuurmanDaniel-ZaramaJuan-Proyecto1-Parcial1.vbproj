@@ -116,6 +116,12 @@
     <Compile Include="Modify User.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proyect Administration.Designer.vb">
+      <DependentUpon>Proyect Administration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyect Administration.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reports.Designer.vb">
       <DependentUpon>Reports.vb</DependentUpon>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modify User.resx">
       <DependentUpon>Modify User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyect Administration.resx">
+      <DependentUpon>Proyect Administration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.vb</DependentUpon>

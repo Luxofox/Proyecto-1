@@ -30,11 +30,12 @@ Partial Class MainMenu
         Me.btnHolidayBank = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblMainMenu = New System.Windows.Forms.Label()
+        Me.btnProyectAdministration = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnTimeRegistration
         '
-        Me.btnTimeRegistration.Location = New System.Drawing.Point(158, 90)
+        Me.btnTimeRegistration.Location = New System.Drawing.Point(158, 80)
         Me.btnTimeRegistration.Name = "btnTimeRegistration"
         Me.btnTimeRegistration.Size = New System.Drawing.Size(134, 38)
         Me.btnTimeRegistration.TabIndex = 0
@@ -43,7 +44,7 @@ Partial Class MainMenu
         '
         'btnProfile
         '
-        Me.btnProfile.Location = New System.Drawing.Point(158, 134)
+        Me.btnProfile.Location = New System.Drawing.Point(158, 124)
         Me.btnProfile.Name = "btnProfile"
         Me.btnProfile.Size = New System.Drawing.Size(134, 38)
         Me.btnProfile.TabIndex = 1
@@ -52,7 +53,7 @@ Partial Class MainMenu
         '
         'btnReports
         '
-        Me.btnReports.Location = New System.Drawing.Point(158, 310)
+        Me.btnReports.Location = New System.Drawing.Point(158, 344)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(134, 38)
         Me.btnReports.TabIndex = 2
@@ -61,7 +62,7 @@ Partial Class MainMenu
         '
         'btnUserAdministration
         '
-        Me.btnUserAdministration.Location = New System.Drawing.Point(158, 266)
+        Me.btnUserAdministration.Location = New System.Drawing.Point(158, 256)
         Me.btnUserAdministration.Name = "btnUserAdministration"
         Me.btnUserAdministration.Size = New System.Drawing.Size(134, 38)
         Me.btnUserAdministration.TabIndex = 3
@@ -70,7 +71,7 @@ Partial Class MainMenu
         '
         'btnHolidayRequest
         '
-        Me.btnHolidayRequest.Location = New System.Drawing.Point(158, 178)
+        Me.btnHolidayRequest.Location = New System.Drawing.Point(158, 168)
         Me.btnHolidayRequest.Name = "btnHolidayRequest"
         Me.btnHolidayRequest.Size = New System.Drawing.Size(134, 38)
         Me.btnHolidayRequest.TabIndex = 4
@@ -79,7 +80,7 @@ Partial Class MainMenu
         '
         'btnHolidayBank
         '
-        Me.btnHolidayBank.Location = New System.Drawing.Point(158, 222)
+        Me.btnHolidayBank.Location = New System.Drawing.Point(158, 212)
         Me.btnHolidayBank.Name = "btnHolidayBank"
         Me.btnHolidayBank.Size = New System.Drawing.Size(134, 38)
         Me.btnHolidayBank.TabIndex = 5
@@ -88,7 +89,7 @@ Partial Class MainMenu
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(183, 368)
+        Me.btnExit.Location = New System.Drawing.Point(183, 399)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(80, 35)
         Me.btnExit.TabIndex = 6
@@ -106,12 +107,22 @@ Partial Class MainMenu
         Me.lblMainMenu.TabIndex = 7
         Me.lblMainMenu.Text = "MAIN MENU"
         '
+        'btnProyectAdministration
+        '
+        Me.btnProyectAdministration.Location = New System.Drawing.Point(158, 300)
+        Me.btnProyectAdministration.Name = "btnProyectAdministration"
+        Me.btnProyectAdministration.Size = New System.Drawing.Size(134, 38)
+        Me.btnProyectAdministration.TabIndex = 8
+        Me.btnProyectAdministration.Text = "Proyect Administration"
+        Me.btnProyectAdministration.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(484, 446)
+        Me.Controls.Add(Me.btnProyectAdministration)
         Me.Controls.Add(Me.lblMainMenu)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnHolidayBank)
@@ -136,4 +147,5 @@ Partial Class MainMenu
     Friend WithEvents btnHolidayBank As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lblMainMenu As System.Windows.Forms.Label
+    Friend WithEvents btnProyectAdministration As System.Windows.Forms.Button
 End Class
