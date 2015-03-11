@@ -13,7 +13,7 @@ Public Class MainMenu
     End Sub
 
 
-    Dim strConexion As String = "Data Source=(localdb)\ProjectsV12;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False"
+    Dim strConexion As String = "Data Source=(LocalDB)\v11.0;Initial Catalog=Clessidra;Integrated Security=True"
     Dim connection As New SqlConnection(strConexion)
     Dim dataTableUser As New DataTable
     Dim dataTableRole As New DataTable
@@ -67,37 +67,7 @@ Public Class MainMenu
 
     End Function
 
-    Public Function createDataTableRole() As DataTable
-
-        dataTableRole = New DataTable
-        dataTableRole.Columns.Add("Role ID")
-        dataTableRole.Columns.Add("Role Name")
-        dataTableRole.Columns.Add("Role Description")
-       
-
-        createDataTableRole = dataTableRole
-
-    End Function
-    Public Function askRoleInputs() As Role
-        Dim roleId As Integer
-        Dim roleName As String
-        Dim roleDescription As String
-
-
-        Dim role As New Role
-        roleName = InputBox("Please enter the name of the user: ")
-        roleDescription = InputBox("Please enter the last name of the user : ")
-        roleId = CInt(InputBox("Please enter the user Role: "))
-
-
-        'Here we create the object
-        role.role_Id = roleId
-        role.role_Name = roleName
-        role.role_Description = roleDescription
-        'return role
-        askRoleInputs = role
-
-    End Function
+  
     Public Sub insertUsers(ByVal user As User)
 
         Dim cmdInsert As New SqlCommand
@@ -143,12 +113,63 @@ Public Class MainMenu
 
     End Sub
     
-   
+    ' Public Function listOfUser() As List(Of User)
+    'From Users Table, obtains all the rows
+    'Dim cmdSelectUser As New SqlCommand("select * from User", connection)
+    'connection.Open()
+
+    ' Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
+    ' Dim userList As New List(Of User)
+
+    ' Dim users As New User
+
+    '  Do While reader.HasRows
+    '       Do While reader.Read()
+    '           users = New User
+    '           users.user_Id = reader.GetInt32(1)
+    '           users.name_Of_User = reader.GetString(2)
+    '          users.user_Lastname = reader.GetString(3)
+    '         users.user_Status = reader.GetBoolean(4)
+    '        users.user_Name = reader.GetString(5)
+    '       users.user_Password = reader.GetString(6)
+    '      users.User_IdRole = reader.GetInt32(7)
+    '     userList.Add(users)
+    'Loop
+    ' reader.NextResult()
+    ' Loop
+
+    '    listOfUser = userList
+    '   connection.Close()
+    ' End Function  
+
 
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        createDataTableUser()
-        insertUsers(askUserInputs())
+        Dim cmdSelectUser As New SqlCommand("select * from User", connection)
+        connection.Open()
+
+        Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
+        Dim numero As Integer
+        Dim users As New User
+        numero = reader.GetInt32(1)
+
+        ' createDataTableUser()
+        ' insertUsers(askUserInputs())
+
+        ' Do While reader.HasRows
+
+        'Do While reader.Read()
+
+
+
+        ' Loop
+        'reader.NextResult()
+        ' Loop
+
+
+        ' Select Case reader.valueOf(FK_Role_User)
+
+        'End Select
 
 
     End Sub

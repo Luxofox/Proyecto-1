@@ -177,7 +177,6 @@ Partial Class MainMenu
         Me.Controls.Add(Me.btnTimeRegistration)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainMenu"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MainMenu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
