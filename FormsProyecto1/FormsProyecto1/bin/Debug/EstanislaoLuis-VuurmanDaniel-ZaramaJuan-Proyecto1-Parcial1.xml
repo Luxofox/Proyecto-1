@@ -6,75 +6,7 @@ EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1
 </name>
 </assembly>
 <members>
-<member name="T:Parcial1.ClessidraDataSet.RoleDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet.UserDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet.RoleRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet.UserRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet.RoleRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet.UserRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSetTableAdapters.RoleTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSetTableAdapters.UserTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Parcial1.ClessidraDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Parcial1.ClessidraDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Parcial1.ClessidraDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.UpdateAll(Parcial1.ClessidraDataSet)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Parcial1.ClessidraDataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:Parcial1.My.Resources.Resources.ResourceManager">
+<member name="P:Parcial1.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

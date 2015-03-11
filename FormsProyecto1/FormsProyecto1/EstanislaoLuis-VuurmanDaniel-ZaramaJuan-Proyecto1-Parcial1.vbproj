@@ -91,14 +91,6 @@
     <Compile Include="Category Management.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClessidraDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClessidraDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ClessidraDataSet.vb">
-      <DependentUpon>ClessidraDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Create User.Designer.vb">
       <DependentUpon>Create User.vb</DependentUpon>
     </Compile>
@@ -256,17 +248,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClessidraDataSet.xsc">
-      <DependentUpon>ClessidraDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ClessidraDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ClessidraDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ClessidraDataSet.xss">
-      <DependentUpon>ClessidraDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

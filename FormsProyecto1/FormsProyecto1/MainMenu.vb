@@ -67,7 +67,7 @@ Public Class MainMenu
 
     End Function
 
-  
+
     Public Sub insertUsers(ByVal user As User)
 
         Dim cmdInsert As New SqlCommand
@@ -91,7 +91,7 @@ Public Class MainMenu
         MsgBox("The data of the user has been succesfully added")
 
     End Sub
-    
+
     Public Sub insertRoles(ByVal role As Role)
 
         Dim cmdInsert As New SqlCommand
@@ -103,7 +103,7 @@ Public Class MainMenu
             .Parameters.AddWithValue("@roleId", role.role_Id)
             .Parameters.AddWithValue("@roleName", role.role_Name)
             .Parameters.AddWithValue("@roleDescription", role.role_Description)
-           
+
         End With
 
         connection.Open()
@@ -112,7 +112,7 @@ Public Class MainMenu
         MsgBox("The data of the roles has been succesfully added")
 
     End Sub
-    
+
     ' Public Function listOfUser() As List(Of User)
     'From Users Table, obtains all the rows
     'Dim cmdSelectUser As New SqlCommand("select * from User", connection)
@@ -151,7 +151,7 @@ Public Class MainMenu
         Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
 
         Dim users As New User
-        MessageBox("hola")
+
         ' createDataTableUser()
         ' insertUsers(askUserInputs())
 

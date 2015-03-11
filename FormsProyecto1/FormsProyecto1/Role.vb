@@ -3,7 +3,7 @@
     Private roleId As Integer
     Private roleName As String
     Private roleDescription As String
-   
+
 
 
     Public Property role_Id() As Integer
