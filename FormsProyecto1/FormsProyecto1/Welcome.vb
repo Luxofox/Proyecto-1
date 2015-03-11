@@ -11,4 +11,10 @@
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnThanks_Click(sender As Object, e As EventArgs) Handles btnThanks.Click
+        MainMenu.Show()
+        Me.Close()
+
+    End Sub
 End Class

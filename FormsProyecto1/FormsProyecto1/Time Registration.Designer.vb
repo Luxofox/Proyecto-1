@@ -31,16 +31,16 @@ Partial Class Time_Registration
         Me.cbMultipleEntry = New System.Windows.Forms.CheckBox()
         Me.cbAllowedWeekends = New System.Windows.Forms.CheckBox()
         Me.btnRegisterHours = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReturnToMainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDescription = New System.Windows.Forms.TextBox()
-        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
         Me.lblProyect = New System.Windows.Forms.Label()
         Me.cbSelectionProyectRegisterHours = New System.Windows.Forms.ComboBox()
         Me.lblWorkCategory = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
+        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReturnToMainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -119,28 +119,6 @@ Partial Class Time_Registration
         Me.btnRegisterHours.Text = "Register Hours"
         Me.btnRegisterHours.UseVisualStyleBackColor = True
         '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(646, 24)
-        Me.MenuStrip1.TabIndex = 11
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'MenuToolStripMenuItem
-        '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReturnToMainMenuToolStripMenuItem})
-        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
-        Me.MenuToolStripMenuItem.Text = "Menu"
-        '
-        'ReturnToMainMenuToolStripMenuItem
-        '
-        Me.ReturnToMainMenuToolStripMenuItem.Name = "ReturnToMainMenuToolStripMenuItem"
-        Me.ReturnToMainMenuToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.ReturnToMainMenuToolStripMenuItem.Text = "Return to Main Menu"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -192,6 +170,28 @@ Partial Class Time_Registration
         Me.ComboBox1.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox1.TabIndex = 17
         '
+        'MenuToolStripMenuItem
+        '
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReturnToMainMenuToolStripMenuItem})
+        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.MenuToolStripMenuItem.Text = "Menu"
+        '
+        'ReturnToMainMenuToolStripMenuItem
+        '
+        Me.ReturnToMainMenuToolStripMenuItem.Name = "ReturnToMainMenuToolStripMenuItem"
+        Me.ReturnToMainMenuToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.ReturnToMainMenuToolStripMenuItem.Text = "Return to Main Menu"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(646, 24)
+        Me.MenuStrip1.TabIndex = 11
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
         'Time_Registration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -234,14 +234,14 @@ Partial Class Time_Registration
     Friend WithEvents cbMultipleEntry As System.Windows.Forms.CheckBox
     Friend WithEvents cbAllowedWeekends As System.Windows.Forms.CheckBox
     Friend WithEvents btnRegisterHours As System.Windows.Forms.Button
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReturnToMainMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtDescription As System.Windows.Forms.TextBox
-    Friend WithEvents PageSetupDialog1 As System.Windows.Forms.PageSetupDialog
     Friend WithEvents lblProyect As System.Windows.Forms.Label
     Friend WithEvents cbSelectionProyectRegisterHours As System.Windows.Forms.ComboBox
     Friend WithEvents lblWorkCategory As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents PageSetupDialog1 As System.Windows.Forms.PageSetupDialog
+    Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReturnToMainMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
 End Class

@@ -149,10 +149,9 @@ Public Class MainMenu
         connection.Open()
 
         Dim reader As SqlDataReader = cmdSelectUser.ExecuteReader()
-        Dim numero As Integer
-        Dim users As New User
-        numero = reader.GetInt32(1)
 
+        Dim users As New User
+        MessageBox("hola")
         ' createDataTableUser()
         ' insertUsers(askUserInputs())
 
